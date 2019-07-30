@@ -14,46 +14,8 @@ from ui.mainwindow import Ui_MainWindow
 app = QtWidgets.QApplication(sys.argv)
 
 url = "https://www.ariva.de"
-#crawl_url1 = "https://www.gurufocus.com/stock_list.php?a="
-#crawl_url2 = "&n=20000"
-#letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "1"]
-#crawl_url3 = "&n=20000&r=USA,CAN,_UK,GBR,_Europe,DEU,FRA,POL,RUS,SWE,TUR,BIH,ITA,LUX,CHE,BEL,GRC,NOR,ESP,DNK,BGR,NLD,ROU,FIN," \
-#             "SRB,AUT,HRV,PRT,SVK,CYP,MKD,SVN,UKR,HUN,LTU,LVA,MLT,ISL,EST,CZE,_Asia,JPN,KOR,THA,HKG,CHN,TWN,MYS,SGP,ISR,IDN,VNM," \
-#             "PHL,LKA,BGD,KWT,NPL,SAU,JOR,OMN,IRN,IRQ,ARE,KAZ,BAH,_Oceania,AUS,NZL,_SA,BRA,MEX,ARG,CHL,PER,COL,JAM,VEN,ECU,_Africa," \
-#             "ZAF,EGY,NGA,MUS,MAR,ZWE,KEN,TUN,GHA,CIV,_India,IND,PAK"
 
-#stocknames = []
 number = 6
-
-#def crawl_stocknames(i):
- #   newurl = crawl_url1 + i + crawl_url2
-#
- #   r = requests.get(newurl)
-  #  doc = BeautifulSoup(r.text, "html.parser")
-   # return doc
-
-#def get_company_names(doc):
- #   count = 0
-  #  for i in doc.select("#R1 tbody .text"):
-   #     if i.select_one(".nav"):
-    #        tempname = i.text
-     #   else:
-      #      if i.text not in stocknames:
-       #         stocknames.append(i.text)
-
-    #return stocknames
-
-#def csv_name_creator(stocknames):
- #   with open("stocknames.csv", "a", newline='', encoding="utf-8") as csvfile:
-  #      namewriter = csv.writer(csvfile, delimiter=",", quotechar='"', quoting=csv.QUOTE_MINIMAL)
-#
- #       for i in stocknames:
-  #          namewriter.writerow([i])
-
-#for i in range(0, len(letters)):
- #   doc = crawl_stocknames(letters[i])
-  #  stocknames = get_company_names(doc)
-   # csv_name_creator(stocknames)
 
 class Canvas(FigureCanvas):
     def __init__(self, parent=None, width=5, height=5, dpi=200):
